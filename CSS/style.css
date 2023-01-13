@@ -1,0 +1,99 @@
+	/* -----Color----- */	
+:root {
+    --background-c0lor: #51d1fb; 
+    --dk-blue: #0050fc; 
+    --Black: #040413; 
+    --yellow: #f0d50a; 
+    --red: rgb(241, 0, 0); 
+    --orange:#ffa600; 
+   --green: rgb(44, 155, 85);
+    --white: rgb(253, 244, 244); 
+}
+	/* -----General----- */	
+* { 
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.4rem;
+	text-rendering: optimizeLegibility;
+    font-family: 'Fredoka', monospace;
+    background: rgb(81,209,251);
+background: radial-gradient(circle, rgba(81,209,251,1) 0%, rgba(255,255,255,1) 100%);
+    color: var(--Black);
+}
+
+	
+body, ul, ol, p, h1, h2 {
+padding: 0;
+margin: 0;
+}
+	/* -----LOGO/BRAND----- */	
+h1 {
+    font-size: 5rem;
+    text-shadow: 5px 5px var(--Black);
+   
+}
+
+.block-letters .block {
+    border: 1px solid var(--Black);
+    box-shadow: 4px 4px var(--Black);
+    background-color: var(--white);
+}
+	/* -----VERBIAGE----- */	
+.block { padding-left: 1rem; padding-right: 1rem;}
+.block-letters .block:nth-child(10n+1){transform: rotate(10deg); color: var(--red);}
+.block-letters .block:nth-child(10n+2){transform: rotate(-10deg);  color: var(--orange);}
+.block-letters .block:nth-child(10n+3){transform: rotate(15deg); padding-left: 1rem; padding-right: 1rem; color: var(--yellow);}
+.block-letters .block:nth-child(10n+4){transform: rotate(-15deg); padding-left: 1rem; padding-right: 1rem; color: var(--green);}
+
+.block-letters .block:nth-child(10n+5){transform: rotate(0deg); padding-left: 1rem; padding-right: 1rem; margin-left: 1rem; margin-right: 1rem; color: var(--dk-blue);}
+
+
+.block-letters .block:nth-child(10n+6){transform: rotate(15deg); padding-left: 1rem; padding-right: 1rem; color: var(--red);}
+.block-letters .block:nth-child(10n+7){transform: rotate(-15deg); padding-left: 1rem; padding-right: 1rem; color: var(--orange);}
+.block-letters .block:nth-child(10n+8){transform: rotate(10deg); padding-left: 1rem; padding-right: 1rem; color: var(--yellow);}
+.block-letters .block:nth-child(10n+9){transform: rotate(-10deg); padding-left: 1rem; padding-right: 1rem; color: var(--green);}
+	/* -----VERBIAGE----- */	
+
+li {
+    list-style-type: none;
+}
+
+img {
+    margin-right: 2rem;
+}
+
+	/* -----equation half----- */	
+.equation-box {
+background-color: var(--white);
+padding: 3rem 5rem;
+margin: 2rem 0rem;
+border: 1px solid var(--Black);
+box-shadow: 10px 10px var(--Black);
+display: block;
+}
+
+.digit {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+.number .input {
+    border: 1px solid var(--Black);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.334);
+
+}
+
+
+
+	/* -----Media Query ----- */	
+
+@media all and (max-width: 750px) {
+    h1 {
+        font-size: 2.5rem;
+        text-shadow: 3px 3px var(--Black);
+    }
+
+    
+  }
